@@ -1,0 +1,137 @@
+.actions button {
+  font-size: 21px;
+}
+
+.schedule-editor {
+  width: min(620px, calc(100% - 28px));
+}
+
+.editor-intro {
+  margin: 8px 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.managed-classes {
+  display: grid;
+  gap: 8px;
+  max-height: min(52vh, 480px);
+  overflow-y: auto;
+}
+
+.managed-class {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 12px;
+  border: 1px solid var(--mint);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.managed-class-info {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.managed-class-info strong {
+  overflow-wrap: anywhere;
+  color: var(--green);
+  font-size: 13px;
+}
+
+.managed-class-info span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.managed-class-actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 6px;
+}
+
+.secondary,
+.danger {
+  padding: 7px 10px;
+  border: 1px solid var(--mint);
+  border-radius: 9px;
+  background: #fff;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.danger {
+  border-color: #f0c4b8;
+  color: #b73512;
+}
+
+.class-form {
+  margin-top: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.form-grid label {
+  display: grid;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--mint);
+  border-radius: 9px;
+  background: #fff;
+  color: #172f33;
+  font: inherit;
+  font-size: 13px;
+}
+
+.form-grid input:focus-visible,
+.form-grid select:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 1px;
+}
+
+.form-wide {
+  grid-column: 1 / -1;
+}
+
+.editor-error {
+  min-height: 1em;
+  margin: 12px 0 0;
+  color: #b73512;
+  font-size: 12px;
+}
+
+.form-actions {
+  gap: 8px;
+}
+
+@media (max-width: 420px) {
+  .managed-class {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-wide {
+    grid-column: auto;
+  }
+}
