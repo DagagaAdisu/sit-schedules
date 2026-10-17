@@ -1,0 +1,250 @@
+header {
+  height: 56px;
+  padding: 0 12px;
+}
+
+.brand {
+  gap: 8px;
+  font-size: 17px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+}
+
+.actions button {
+  width: 36px;
+  height: 36px;
+}
+
+.group-filter {
+  padding: 10px 14px 0;
+}
+
+.group-filter select {
+  min-width: 136px;
+  padding: 8px 30px 8px 10px;
+  font-size: 12px;
+}
+
+main {
+  padding: 14px;
+}
+
+.date-card {
+  padding: 18px;
+  border-radius: 17px;
+}
+
+.weekday {
+  font-size: 13px;
+}
+
+.date-card h1 {
+  margin: 4px 0 12px;
+  font-size: clamp(21px, 4.5vw, 25px);
+}
+
+.timesystem {
+  font-size: 11px;
+}
+
+.section-head {
+  gap: 10px;
+  margin: 19px 0 11px;
+}
+
+.section-head h2 {
+  font-size: 18px;
+}
+
+.count {
+  padding: 5px 9px;
+  font-size: 11px;
+}
+
+.class-list {
+  gap: 8px;
+}
+
+.class-card {
+  gap: 11px;
+  padding: 13px;
+  border-radius: 14px;
+}
+
+.accent {
+  min-height: 66px;
+}
+
+.course {
+  font-size: 15px;
+}
+
+.code {
+  font-size: 9px;
+}
+
+.detail {
+  gap: 4px 6px;
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+.group {
+  padding: 3px 8px;
+  font-size: 11px;
+}
+
+.time {
+  flex-basis: 88px;
+  max-width: 88px;
+  font-size: 10px;
+}
+
+.week-title {
+  font-size: 22px;
+}
+
+.muted {
+  margin: 4px 0 15px;
+  font-size: 12px;
+}
+
+.chips {
+  gap: 7px;
+}
+
+.chip {
+  padding: 9px 12px;
+  font-size: 12px;
+}
+
+.selected-day {
+  gap: 10px;
+  margin: 13px 0 12px;
+  padding: 13px;
+}
+
+.calendar {
+  font-size: 22px;
+}
+
+.selected-copy strong {
+  font-size: 15px;
+}
+
+.selected-copy span {
+  font-size: 11px;
+}
+
+nav {
+  min-height: calc(60px + env(safe-area-inset-bottom));
+  padding: 6px 10px calc(6px + env(safe-area-inset-bottom));
+  gap: 10px;
+}
+
+.nav {
+  gap: 2px;
+  font-size: 10px;
+}
+
+.nav span {
+  font-size: 19px;
+}
+
+#toast {
+  bottom: calc(74px + env(safe-area-inset-bottom));
+  padding: 10px 14px;
+  font-size: 12px;
+}
+
+dialog {
+  padding: 19px;
+}
+
+.dialog-head h2 {
+  font-size: 19px;
+}
+
+.schedule-editor {
+  width: min(580px, calc(100% - 24px));
+}
+
+.editor-intro {
+  font-size: 12px;
+}
+
+.managed-classes {
+  gap: 7px;
+}
+
+.managed-class {
+  gap: 10px;
+  padding: 9px 10px;
+}
+
+.managed-class-info strong {
+  font-size: 12px;
+}
+
+.managed-class-info span,
+.secondary,
+.danger {
+  font-size: 10px;
+}
+
+.secondary,
+.danger {
+  padding: 6px 8px;
+}
+
+.form-grid {
+  gap: 10px;
+}
+
+.form-grid label {
+  gap: 4px;
+  font-size: 11px;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 8px 9px;
+  font-size: 12px;
+}
+
+.editor-error {
+  font-size: 11px;
+}
+
+.primary {
+  padding: 9px 15px;
+}
+
+@media (max-width: 380px) {
+  main {
+    padding: 11px;
+  }
+
+  .group-filter {
+    padding: 9px 11px 0;
+  }
+
+  .class-card {
+    padding: 11px;
+    gap: 8px;
+  }
+
+  .time {
+    flex-basis: 76px;
+    max-width: 76px;
+    font-size: 9px;
+  }
+
+  .course {
+    font-size: 14px;
+  }
+}
